@@ -1,0 +1,22 @@
+@use "../abstracts";
+
+h1,
+h2,
+h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+  font-family: abstracts.$barlow;
+  font-weight: 600;
+}
+
+a {
+  font-family: abstracts.$fraunces;
+  font-weight: 700;
+  color: abstracts.$black;
+  text-decoration: none;
+}

@@ -1,0 +1,11 @@
+@use "../abstracts";
+
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
