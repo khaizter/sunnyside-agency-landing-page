@@ -6,10 +6,17 @@
   text-align: center;
   &__title {
     margin-top: 300px;
-    color: abstracts.$dark-desaturated-cyan;
   }
 
   &__body {
+    font-size: 1.1rem;
+  }
+
+  &--green {
     color: abstracts.$dark-desaturated-cyan;
+  }
+
+  &--blue {
+    color: abstracts.$dark-blue;
   }
 }

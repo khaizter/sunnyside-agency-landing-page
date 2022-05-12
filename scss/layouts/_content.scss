@@ -27,6 +27,13 @@
     margin-top: 2rem;
     margin-bottom: 1rem;
     color: abstracts.$black;
-    border-bottom: 2px solid #ffcf00;
+    border-bottom: 2px solid black;
+    &--transform {
+      border-bottom: 2px solid #ffcf00;
+    }
+
+    &--standout {
+      border-bottom: 2px solid #fd7867;
+    }
   }
 }
