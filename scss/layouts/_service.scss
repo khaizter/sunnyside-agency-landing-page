@@ -1,0 +1,16 @@
+@use "../abstracts";
+
+.service {
+  background-size: cover;
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+
+.service h2 {
+  margin-top: 300px;
+  color: abstracts.$dark-desaturated-cyan;
+}
+
+.service p {
+  color: abstracts.$dark-desaturated-cyan;
+}
