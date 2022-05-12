@@ -1,0 +1,40 @@
+@use "../abstracts";
+
+.footer {
+  background-color: #90d4c5;
+  padding-top: 3.5rem;
+  text-align: center;
+
+  &__title {
+    filter: invert(25%) sepia(64%) saturate(386%) hue-rotate(116deg)
+      brightness(50%) contrast(85%);
+    margin-bottom: 2rem;
+    width: 50%;
+  }
+
+  &__nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__nav-item {
+    font-family: abstracts.$barlow;
+    font-size: 1.2rem;
+    color: abstracts.$dark-moderate-cyan;
+  }
+
+  &__contacts {
+    margin-inline: 5rem;
+    padding: 5rem 0;
+  }
+
+  &__contact-list {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+}
