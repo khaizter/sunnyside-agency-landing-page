@@ -3,30 +3,30 @@
 .content {
   display: flex;
   flex-direction: column;
-}
 
-.content__image {
-  width: 100%;
-}
+  &__image {
+    width: 100%;
+  }
 
-.content__details {
-  padding: 2.5rem 2rem;
-  text-align: center;
-}
+  &__details {
+    padding: 2.5rem 2rem;
+    text-align: center;
+  }
 
-.content__title {
-  font-size: 2rem;
-  color: abstracts.$black;
-}
+  &__title {
+    font-size: 2rem;
+    color: abstracts.$black;
+  }
 
-.content__body {
-  color: abstracts.$dark-grayish-blue;
-}
+  &__body {
+    color: abstracts.$dark-grayish-blue;
+  }
 
-.content__cta {
-  display: inline-block;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  color: abstracts.$black;
-  border-bottom: 2px solid #ffcf00;
+  &__cta {
+    display: inline-block;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: abstracts.$black;
+    border-bottom: 2px solid #ffcf00;
+  }
 }

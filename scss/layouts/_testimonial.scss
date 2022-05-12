@@ -1,0 +1,35 @@
+@use "../abstracts";
+
+.testimonials {
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+
+.testimonials__title {
+  font-size: 1rem;
+  color: abstracts.$grayish-blue;
+  letter-spacing: 3px;
+}
+
+.testimonial {
+  &__display-picture {
+    border-radius: 50%;
+    width: 20%;
+    margin: 2rem 0;
+  }
+
+  &__body {
+    color: abstracts.$dark-grayish-blue;
+  }
+
+  &__name {
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+  }
+
+  &__position {
+    color: abstracts.$grayish-blue;
+    font-size: 1rem;
+  }
+}
