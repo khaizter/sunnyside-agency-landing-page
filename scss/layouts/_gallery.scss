@@ -8,19 +8,19 @@
     width: 50%;
 
     &--milkbottles {
-      content: url("../../images/mobile/image-gallery-milkbottles.jpg");
+      content: url(#{abstracts.$imagesPath}/mobile/image-gallery-milkbottles.jpg);
     }
 
     &--orange {
-      content: url("../../images/mobile/image-gallery-orange.jpg");
+      content: url(#{abstracts.$imagesPath}/mobile/image-gallery-orange.jpg);
     }
 
     &--cone {
-      content: url("../../images/mobile/image-gallery-cone.jpg");
+      content: url(#{abstracts.$imagesPath}/mobile/image-gallery-cone.jpg);
     }
 
     &--cubes {
-      content: url("../../images/mobile/image-gallery-sugar-cubes.jpg");
+      content: url(#{abstracts.$imagesPath}/mobile/image-gallery-sugar-cubes.jpg);
     }
   }
 
@@ -28,19 +28,19 @@
     &__image {
       width: 25%;
       &--milkbottles {
-        content: url("../../images/desktop/image-gallery-milkbottles.jpg");
+        content: url(#{abstracts.$imagesPath}/desktop/image-gallery-milkbottles.jpg);
       }
 
       &--orange {
-        content: url("../../images/desktop/image-gallery-orange.jpg");
+        content: url(#{abstracts.$imagesPath}/desktop/image-gallery-orange.jpg);
       }
 
       &--cone {
-        content: url("../../images/desktop/image-gallery-cone.jpg");
+        content: url(#{abstracts.$imagesPath}/desktop/image-gallery-cone.jpg);
       }
 
       &--cubes {
-        content: url("../../images/desktop/image-gallery-sugar-cubes.jpg");
+        content: url(#{abstracts.$imagesPath}/desktop/image-gallery-sugar-cubes.jpg);
       }
     }
   }

@@ -5,7 +5,7 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  background-image: url("../../images/mobile/image-header.jpg");
+  background-image: url(#{abstracts.$imagesPath}/mobile/image-header.jpg);
 
   &__nav {
     position: absolute;
@@ -118,6 +118,6 @@
     margin-inline: auto;
   }
   @media (min-width: abstracts.$breakpoint-tablet) {
-    background-image: url("../../images/desktop/image-header.jpg");
+    background-image: url(#{abstracts.$imagesPath}/desktop/image-header.jpg);
   }
 }

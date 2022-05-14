@@ -8,11 +8,11 @@
     width: 100%;
 
     &--transform {
-      content: url("../../images/mobile/image-transform.jpg");
+      content: url(#{abstracts.$imagesPath}/mobile/image-transform.jpg);
     }
 
     &--stand-out {
-      content: url("../../images/mobile/image-stand-out.jpg");
+      content: url(#{abstracts.$imagesPath}/mobile/image-stand-out.jpg);
     }
   }
 
@@ -81,11 +81,11 @@
     &__image {
       width: 50%;
       &--transform {
-        content: url("../../images/desktop/image-transform.jpg");
+        content: url(#{abstracts.$imagesPath}/desktop/image-transform.jpg);
       }
 
       &--stand-out {
-        content: url("../../images/desktop/image-stand-out.jpg");
+        content: url(#{abstracts.$imagesPath}/desktop/image-stand-out.jpg);
       }
     }
 
