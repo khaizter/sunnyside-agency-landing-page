@@ -53,6 +53,7 @@
       background-color: lightgray;
       border-radius: 10px;
       z-index: -1;
+      transition: 0.5s ease-out;
     }
 
     &--transform::before {
@@ -65,10 +66,14 @@
 
     &--transform:hover::before {
       background-color: #f5cc00;
+      left: -7px;
+      width: calc(100% + 14px);
     }
 
     &--standout:hover::before {
       background-color: #f3796b;
+      left: -7px;
+      width: calc(100% + 14px);
     }
   }
   @media (min-width: abstracts.$breakpoint-tablet) {
@@ -89,9 +94,6 @@
       text-align: left;
       align-items: flex-start;
       padding: 5rem 4rem;
-
-      > * {
-      }
     }
     &:nth-child(odd) {
       flex-direction: row-reverse;
