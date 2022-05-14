@@ -5,6 +5,7 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  background-image: url("../../images/mobile/image-header.jpg");
 
   &__nav {
     position: absolute;
@@ -14,6 +15,93 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  &__hamburger {
+    display: block;
+    padding: 1rem;
+    @media (min-width: abstracts.$breakpoint-tablet) {
+      display: none;
+    }
+  }
+
+  &__links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    // mobile
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: calc(100% + 1.5em);
+    left: 1.5rem;
+    background-color: abstracts.$white;
+    width: calc(100% - 3rem);
+    padding: 2rem;
+    gap: 2rem;
+
+    &:before {
+      content: "";
+      border-bottom: 1.5em solid #fff;
+      border-left: 1.5em solid transparent;
+      height: 0;
+      position: absolute;
+      right: 0;
+      top: -20px;
+      width: 0;
+    }
+
+    &.active {
+      display: flex;
+    }
+
+    @media (min-width: abstracts.$breakpoint-tablet) {
+      display: flex;
+      flex-direction: row;
+      position: static;
+      gap: 3rem;
+      padding: 0;
+      background: none;
+      width: auto;
+      &:before {
+        border: none;
+      }
+    }
+  }
+
+  &__link-item {
+    font-family: abstracts.$barlow;
+    font-size: 1.2rem;
+    color: abstracts.$dark-grayish-blue;
+
+    &--cta {
+      display: block;
+      background-color: abstracts.$yellow;
+      border-radius: 30px;
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+      font-family: abstracts.$fraunces;
+      color: abstracts.$black;
+    }
+
+    @media (min-width: abstracts.$breakpoint-tablet) {
+      color: abstracts.$white;
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.562);
+      }
+
+      &--cta {
+        background-color: abstracts.$white;
+        color: abstracts.$black;
+      }
+      &--cta:hover {
+        background-color: rgba(255, 255, 255, 0.37);
+        color: white;
+      }
+    }
   }
 
   &__title {
@@ -28,5 +116,8 @@
     display: block;
     margin-top: 3rem;
     margin-inline: auto;
+  }
+  @media (min-width: abstracts.$breakpoint-tablet) {
+    background-image: url("../../images/desktop/image-header.jpg");
   }
 }

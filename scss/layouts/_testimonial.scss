@@ -1,17 +1,8 @@
 @use "../abstracts";
 
-.testimonials {
-  padding: 2.5rem 2rem;
-  text-align: center;
-
-  &__title {
-    font-size: 1rem;
-    color: abstracts.$grayish-blue;
-    letter-spacing: 3px;
-  }
-}
-
 .testimonial {
+  max-width: 40ch;
+
   &__display-picture {
     border-radius: 50%;
     width: 20%;

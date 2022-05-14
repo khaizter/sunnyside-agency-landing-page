@@ -1,0 +1,9 @@
+@use "../abstracts";
+
+.services {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: abstracts.$breakpoint-tablet) {
+    flex-direction: row;
+  }
+}

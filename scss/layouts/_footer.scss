@@ -4,12 +4,16 @@
   background-color: #90d4c5;
   padding-top: 3.5rem;
   text-align: center;
-
   &__title {
     filter: invert(25%) sepia(64%) saturate(386%) hue-rotate(116deg)
       brightness(50%) contrast(85%);
     margin-bottom: 2rem;
-    width: 50%;
+    width: 190px;
+  }
+
+  &__nav {
+    max-width: 420px;
+    margin-inline: auto;
   }
 
   &__nav-list {
@@ -24,10 +28,15 @@
     font-family: abstracts.$barlow;
     font-size: 1.2rem;
     color: abstracts.$dark-moderate-cyan;
+
+    &:hover {
+      color: white;
+    }
   }
 
   &__contacts {
-    margin-inline: 5rem;
+    margin-inline: auto;
+    max-width: 254px;
     padding: 5rem 0;
   }
 
@@ -36,5 +45,13 @@
     display: flex;
     justify-content: space-around;
     list-style: none;
+  }
+
+  &__contact-item a {
+    display: block;
+    &:hover img {
+      filter: invert(88%) sepia(84%) saturate(42%) hue-rotate(210deg)
+        brightness(124%) contrast(100%);
+    }
   }
 }

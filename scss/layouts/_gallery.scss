@@ -1,8 +1,47 @@
+@use "../abstracts";
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
   &__image {
     display: block;
     width: 50%;
+
+    &--milkbottles {
+      content: url("../../images/mobile/image-gallery-milkbottles.jpg");
+    }
+
+    &--orange {
+      content: url("../../images/mobile/image-gallery-orange.jpg");
+    }
+
+    &--cone {
+      content: url("../../images/mobile/image-gallery-cone.jpg");
+    }
+
+    &--cubes {
+      content: url("../../images/mobile/image-gallery-sugar-cubes.jpg");
+    }
+  }
+
+  @media (min-width: abstracts.$breakpoint-tablet) {
+    &__image {
+      width: 25%;
+      &--milkbottles {
+        content: url("../../images/desktop/image-gallery-milkbottles.jpg");
+      }
+
+      &--orange {
+        content: url("../../images/desktop/image-gallery-orange.jpg");
+      }
+
+      &--cone {
+        content: url("../../images/desktop/image-gallery-cone.jpg");
+      }
+
+      &--cubes {
+        content: url("../../images/desktop/image-gallery-sugar-cubes.jpg");
+      }
+    }
   }
 }

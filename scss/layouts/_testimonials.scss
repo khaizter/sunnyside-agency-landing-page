@@ -1,0 +1,28 @@
+@use "../abstracts";
+
+.testimonials {
+  padding: 2.5rem 2rem;
+  text-align: center;
+
+  &__title {
+    font-size: 1rem;
+    color: abstracts.$grayish-blue;
+    letter-spacing: 3px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: abstracts.$breakpoint-tablet) {
+    padding: 8rem 2rem;
+
+    &__list {
+      flex-direction: row;
+      gap: 2rem;
+    }
+  }
+}

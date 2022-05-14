@@ -4,19 +4,36 @@
   background-size: cover;
   padding: 2.5rem 2rem;
   text-align: center;
+  width: 100%;
   &__title {
     margin-top: 300px;
   }
 
   &__body {
     font-size: 1.1rem;
+    max-width: 40ch;
+    margin-inline: auto;
   }
 
   &--green {
     color: abstracts.$dark-desaturated-cyan;
+    background-image: url("../../images/mobile/image-graphic-design.jpg");
   }
 
   &--blue {
     color: abstracts.$dark-blue;
+    background-image: url("../../images/mobile/image-photography.jpg");
+  }
+
+  @media (min-width: abstracts.$breakpoint-tablet) {
+    background-position: center;
+    width: 50%;
+    &--green {
+      background-image: url("../../images/desktop/image-graphic-design.jpg");
+    }
+
+    &--blue {
+      background-image: url("../../images/desktop/image-photography.jpg");
+    }
   }
 }
